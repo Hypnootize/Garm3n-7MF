@@ -24,6 +24,11 @@
 			"visible"		"1"
 			"proportionaltoparent"	"1"
 
+			if_mini
+			{
+				"xpos"		"cs-0.5-228"
+			}
+
 			"ParticleEffects"
 			{
 				"0"
@@ -118,6 +123,11 @@
 
 			"paintbackground"	"0"
 
+			if_mini
+			{
+				"xpos"		"cs-0.5-228"
+			}
+
 			"ParticleEffects"
 			{
 				"0"
@@ -182,7 +192,6 @@
 		"tall"			"f40"
 		"visible"		"1"
 		"PaintBackgroundType"	"2"
-		"border"		"NoBorder"
 		"proportionaltoparent"	"1"
 
 		if_mini
@@ -191,7 +200,6 @@
 			"ypos"			"cs-0.5"
 			"tall"			"35"
 			"wide"			"505"
-			"border"		"MainMenuBGBorder"
 		}
 
 		"NameLabel"
@@ -199,7 +207,7 @@
 			"ControlName"	"Label"
 			"fieldName"		"NameLabel"
 			"xpos"			"65"
-			"ypos"			"5"
+			"ypos"			"0"
 			"wide"			"f0"
 			"zpos"			"100"
 			"tall"			"20"
@@ -214,18 +222,16 @@
 			if_mini
 			{
 				"visible"	"0"
-				"font"			"HudFontSmallishBold"
-				"fgcolor_override"	"TanLight"
 			}
 		}
 
-		"LevelLabel"
+		"DescLine1"
 		{
-			"ControlName"	"Label"
-			"fieldName"		"LevelLabel"
+			"ControlName"	"CAutoFittingLabel"
+			"fieldName"		"DescLine1"
 			"xpos"			"65"
-			"ypos"			"24"
-			"wide"			"f0"
+			"ypos"			"16"
+			"wide"			"195"
 			"zpos"			"100"
 			"tall"			"20"
 			"visible"		"1"
@@ -233,15 +239,59 @@
 			"font"			"HudFontGarm3nMenuSmall"
 			"fgcolor_override"	"255 255 255 255"
 			"textAlignment"	"north-west"
-			"labelText"		"%level%"
+			"labelText"		"%desc1%"
 			"proportionaltoparent"	"1"
 
 			if_mini
 			{
 				"xpos"	"67"
 				"ypos"	"4"
-				"font"			"HudFontSmallestBold"
-				"fgcolor_override"	"TanLight"
+				"font"	"HudFontSmallestBold"
+			}
+
+			"fonts"
+			{
+				"0"		"HudFontGarm3nMenuSmall"
+				"1"		"HudFontGarm3nMenuSmall"
+				"2"		"HudFontGarm3nMenuSmall"
+			}
+		}
+
+		"DescLine2"
+		{
+			"ControlName"	"CAutoFittingLabel"
+			"fieldName"		"DescLine2"
+			"xpos"			"65"
+			"ypos"			"31"
+			"wide"			"195"
+			"zpos"			"100"
+			"tall"			"20"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"HudFontGarm3nMenuSmall"
+			"fgcolor_override"	"255 255 255 255"
+			"textAlignment"	"north-west"
+			"labelText"		"%desc2%"
+			"proportionaltoparent"	"1"
+
+			if_mini
+			{
+				"xpos"	"67"
+				"ypos"	"4"
+				"font"	"HudFontSmallestBold"
+			}
+
+			"fonts"
+			{
+				"0"		"HudFontGarm3nMenuSmall"
+				"1"		"HudFontGarm3nMenuSmall"
+				"2"		"HudFontGarm3nMenuSmall"
+			}
+
+			"colors"
+			{
+				"1"		"CreditsGreen"
+				"2"		"255 255 255 255"
 			}
 		}
 
