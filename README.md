@@ -1,6 +1,6 @@
 <div align="center">
 
-# Garm3n-7MF 
+# Garm3n 7MF 
 ### By Garm3n
 
 **[SCREENSHOTS](../screenshots/showcase.md)** -
